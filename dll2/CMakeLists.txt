@@ -1,0 +1,5 @@
+project(dll2)
+add_library(dll2 SHARED dll2.cpp)
+target_compile_definitions(dll2 PRIVATE DLL2_EXPORT)
+target_include_directories(dll2 PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(dll2 headeronly)
