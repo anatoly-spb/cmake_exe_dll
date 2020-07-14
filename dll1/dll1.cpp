@@ -13,4 +13,12 @@ namespace dll1 {
      return sizeof(T);
    }
 
+  template<typename T>
+  void knowhow<T>::foo()
+   {
+     // secret
+   }
+
+  template struct knowhow<int>;
+
 }
